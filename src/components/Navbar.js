@@ -8,14 +8,18 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <ul>
-        <li onClick={() => scrollToSection('hero')}>Home</li>
-        <li onClick={() => scrollToSection('about')}>About</li>
-        <li onClick={() => scrollToSection('programs')}>Programs</li>
-        <li onClick={() => scrollToSection('faq')}>FAQ</li>
-        <li onClick={() => scrollToSection('media')}>Media</li>
-        <li onClick={() => scrollToSection('contact')}>Contact</li>
-      </ul>
+      {/* Logo or Brand Name */}
+      <h1>VUTH</h1>
+
+      {/* Navigation Links */}
+      <nav>
+        <a onClick={() => scrollToSection('hero')} href="#hero">Home</a>
+        <a onClick={() => scrollToSection('about')} href="#about">About</a>
+        <a onClick={() => scrollToSection('programs')} href="#programs">Programs</a>
+        <a onClick={() => scrollToSection('faq')} href="#faq">FAQ</a>
+        <a onClick={() => scrollToSection('media')} href="#media">Media</a>
+        <a onClick={() => scrollToSection('contact')} href="#contact">Contact</a>
+      </nav>
     </nav>
   );
 }
