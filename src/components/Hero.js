@@ -9,9 +9,12 @@ export default function Hero() {
         Experience the ultimate rejuvenation with our deep tissue medical massage, 
         designed to improve blood flow, release muscle tension, and restore the energy flow of Chi.
       </p>
-      <button onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
-        Book Now
-      </button>
+
+      <div className="cta">
+        <button onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
+          Contact Us
+        </button>
+      </div>
     </section>
   );
 }

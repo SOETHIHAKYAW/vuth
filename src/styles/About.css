@@ -1,28 +1,155 @@
+/* General Styles */
 .about {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-  }
-  
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  max-width: 700px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+/* Card Styles */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  color: #18bc9c;
+  margin-bottom: 15px;
+}
+
+.card p,
+.card ul {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card li {
+  margin-bottom: 10px;
+}
+
+/* How It Works Section */
+.card .how-it-works-icons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.icon {
+  text-align: center;
+  max-width: 200px;
+}
+
+.icon img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.icon p {
+  font-size: 1.1rem;
+  color: #34495e;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Accordion Styles */
+.data-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+.data-item:hover {
+  background-color: #f1f1f1;
+}
+
+.data-item.active {
+  background-color: #f9f9f9;
+  border-color: #56ab2f;
+}
+
+.data-item h3 {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin: 0;
+}
+
+.data-item p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin-top: 10px;
+}
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 768px) {
   .about h2 {
-    font-size: 2.5rem;
-    color: #34495e;
+    font-size: 2rem;
   }
-  
+
   .about p {
-    font-size: 1.2rem;
-    color: #7f8c8d;
-    max-width: 700px;
-    margin: 20px auto;
+    font-size: 1rem;
   }
-  
-  @media (max-width: 768px) {
-    .about h2 {
-      font-size: 2rem;
-    }
-  
-    .about p {
-      font-size: 1rem;
-    }
+
+  .card h3 {
+    font-size: 1.5rem;
   }
-  
+
+  .card {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .how-it-works-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon {
+    max-width: 150px;
+  }
+
+  .accordion-title {
+    font-size: 1rem;
+  }
+
+  .accordion-arrow {
+    font-size: 1.3rem;
+  }
+
+  .accordion-content {
+    padding: 15px;
+  }
+}
