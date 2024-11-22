@@ -10,11 +10,10 @@
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.navbar h1 {
-  font-family: 'Playfair Display', serif; /* Elegant font for logo */
-  color: #fff; /* Logo text color */
-  font-size: 1.5rem; /* Adjust font size */
-  margin: 0; /* Remove default margin */
+/* Logo Image */
+.navbar-logo {
+  height: 40px; /* Set height for the logo */
+  width: auto; /* Maintain aspect ratio */
 }
 
 /* Navigation Links */
@@ -38,22 +37,21 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .navbar {
-      flex-wrap: wrap; /* Allow wrapping if necessary */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
   }
 
-  .navbar h1 {
-      flex: 1; /* Ensure the logo takes up available space */
-      text-align: center; /* Center the logo on mobile */
-      margin-bottom: 10px; /* Space between logo and links */
+  /* Hide the logo image on mobile */
+  .navbar-logo {
+    display: none;
   }
 
   .navbar nav {
-      justify-content: center; /* Center navigation links */
-      flex-wrap: wrap; /* Allow wrapping to prevent overflow */
-      gap: 10px; /* Adjust gap for smaller screens */
+    justify-content: center; /* Center navigation links */
+    flex-wrap: wrap; /* Allow wrapping to prevent overflow */
+    gap: 8px; /* Adjust gap for smaller screens */
   }
 
   .navbar nav a {
-      font-size: 0.9rem; /* Slightly smaller font for mobile */
+    font-size: 0.9rem; /* Slightly smaller font for mobile */
   }
 }

@@ -4,8 +4,8 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Programs from './components/Programs';
 import FAQ from './components/FAQ';
-import Media from './components/Media';
 import Contact from './components/Contact';
+import Testimonials from './components/Testimonials';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <About />
       <Programs />
       <FAQ />
-      <Media />
+      <Testimonials />
       <Contact />
     </div>
   );

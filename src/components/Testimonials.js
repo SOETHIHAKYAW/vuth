@@ -1,10 +1,10 @@
 import React from 'react';
-import '../styles/Media.css';
+import '../styles/Testimonials.css';
 
-export default function Media() {
+export default function Testimonials() {
   return (
-    <section id="media" className="media">
-      <h2>Media Gallery</h2>
+    <section id="testimonials" className="media">
+      <h2>Testimonials</h2>
       <div className="media-gallery">
         <img src="/assets/images/gallery/gallery1.jpg" alt="Massage Therapy" />
         {/* <img src="/assets/images/gallery/gallery2.jpg" alt="Massage Therapy" /> */}

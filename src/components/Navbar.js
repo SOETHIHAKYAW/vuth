@@ -8,8 +8,12 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      {/* Logo or Brand Name */}
-      <h1>VUTH</h1>
+      {/* Logo as an image */}
+      <img
+        src="../assets/logo/mmkp.png"
+        alt="MMKP Logo"
+        className="navbar-logo" // Added class for styling
+      />
 
       {/* Navigation Links */}
       <nav>
@@ -17,7 +21,7 @@ export default function Navbar() {
         <a onClick={() => scrollToSection('about')} href="#about">About</a>
         <a onClick={() => scrollToSection('programs')} href="#programs">Programs</a>
         <a onClick={() => scrollToSection('faq')} href="#faq">FAQ</a>
-        <a onClick={() => scrollToSection('media')} href="#media">Media</a>
+        <a onClick={() => scrollToSection('testimonials')} href="#testimonials">Testimonials</a>
         <a onClick={() => scrollToSection('contact')} href="#contact">Contact</a>
       </nav>
     </nav>
