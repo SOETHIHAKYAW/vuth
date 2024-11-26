@@ -3,24 +3,22 @@ import '../styles/Hero.css';
 
 export default function Hero() {
   return (
-    <section id='hero' className="hero">
-      {/* Title moved to the top */}
+    <section id="hero" className="hero">
+      {/* Title Section */}
       <h1>Medical Massage</h1>
-      <h2> Koh Phangan</h2>
+      <h2>Koh Phangan</h2>
       <p>
         <em>Your gateway to wellness</em>
       </p>
-      <div>
-        {/* div means one row that has two column for image and hero text */}
 
-          {/* Hero text aligned to the left */}
-          <div className="hero-text">
-            {['Diagnostic', 'Release', 'Move', 'Flow', 'Glow'].map((text, index) => (
-              <div key={index} className="hero-card">
-                <span>{text}</span>
-              </div>
-            ))}
-          </div>
+      <div className="hero-container">
+        {/* Left Hero Text */}
+        <div className="hero-side">
+          <div className="hero-text hero-top">Diagnostic</div>
+          <div className="hero-text hero-bottom">Release</div>
+        </div>
+
+        {/* Center Image */}
         <div className="hero-image-container">
           <img
             src="../assets/hero/hero.jpg"
@@ -28,10 +26,15 @@ export default function Hero() {
             className="hero-image"
           />
         </div>
-        
+
+        {/* Right Hero Text */}
+        <div className="hero-side">
+          <div className="hero-text hero-top">Move</div>
+          <div className="hero-text hero-bottom">Flow</div>
+        </div>
       </div>
-      
-      {/* Call-to-action button */}
+
+      {/* Call-to-Action */}
       <div className="hero-content">
         <div className="cta">
           <button
