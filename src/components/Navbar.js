@@ -20,8 +20,8 @@ export default function Navbar() {
         <a onClick={() => scrollToSection('hero')} href="#hero">Home</a>
         <a onClick={() => scrollToSection('about')} href="#about">About</a>
         <a onClick={() => scrollToSection('programs')} href="#programs">Programs</a>
-        <a onClick={() => scrollToSection('faq')} href="#faq">FAQ</a>
         <a onClick={() => scrollToSection('testimonials')} href="#testimonials">Testimonials</a>
+        <a onClick={() => scrollToSection('media')} href="#media">Media</a>
         <a onClick={() => scrollToSection('contact')} href="#contact">Contact</a>
       </nav>
     </nav>

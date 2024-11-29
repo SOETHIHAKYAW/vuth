@@ -1,155 +1,168 @@
 /* General Styles */
 .about {
-  padding: 60px 20px;
+  padding: 80px 30px;
   text-align: center;
-  background-color: #f9f9f9;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
 }
 
 .about h2 {
-  font-size: 2.5rem;
-  color: #34495e;
-  margin-bottom: 20px;
+  font-size: 2.8rem;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .about p {
-  font-size: 1.2rem;
-  color: #7f8c8d;
-  max-width: 700px;
-  margin: 20px auto;
-  line-height: 1.6;
+  font-size: 1.25rem;
+  color: #555;
+  max-width: 750px;
+  margin: 25px auto;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
 }
 
 /* Card Styles */
 .card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 850px;
   box-sizing: border-box;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
 .card h3 {
-  font-size: 1.8rem;
-  color: #18bc9c;
-  margin-bottom: 15px;
+  font-size: 2rem;
+  color: #16a085;
+  margin-bottom: 20px;
 }
 
 .card p,
 .card ul {
-  font-size: 1.1rem;
-  color: #7f8c8d;
+  font-size: 1.2rem;
+  color: #666;
 }
 
 .card ul {
-  padding-left: 20px;
+  list-style: none; /* Remove default bullet */
+  padding-left: 1.5rem; /* Adjust padding for alignment */
 }
 
 .card li {
-  margin-bottom: 10px;
+  position: relative;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 12px;
 }
 
-/* How It Works Section */
-.card .how-it-works-icons {
+.card li::before {
+  content: '◆'; /* Diamond bullet */
+  color: #16a085; /* Adjust color as needed */
+  font-size: 1rem; /* Adjust size */
+  position: absolute;
+  left: -1.5rem; /* Adjust to align with text */
+  top: 0;
+}
+
+/* Icon Section */
+.how-it-works-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 30px;
+  gap: 50px;
+  margin-top: 35px;
 }
 
 .icon {
   text-align: center;
-  max-width: 200px;
+  max-width: 220px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: translateY(-10px);
 }
 
 .icon img {
-  width: 70px;
-  height: 70px;
-  margin-bottom: 10px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
 }
 
 .icon p {
-  font-size: 1.1rem;
-  color: #34495e;
+  font-size: 1.15rem;
+  color: #2c3e50;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* Accordion Styles */
 .data-item {
-  padding: 15px;
+  padding: 20px;
   border: 1px solid #ddd;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   cursor: pointer;
   background-color: #fff;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .data-item:hover {
-  background-color: #f1f1f1;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .data-item.active {
-  background-color: #f9f9f9;
-  border-color: #56ab2f;
+  background-color: #e8f8f5;
+  border-color: #1abc9c;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-.data-item h3 {
-  font-size: 1.5rem;
+.data-item h4 {
+  font-size: 1.6rem;
   color: #34495e;
   margin: 0;
 }
 
 .data-item p {
-  font-size: 1.1rem;
-  color: #7f8c8d;
-  margin-top: 10px;
+  font-size: 1.15rem;
+  color: #666;
+  margin-top: 15px;
+  line-height: 1.7;
 }
 
-/* Responsive Layout for Smaller Screens */
+/* Responsive Enhancements */
 @media (max-width: 768px) {
   .about h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .about p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .card h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .card {
-    max-width: 100%;
-    padding: 15px;
+    padding: 20px;
+    margin: 20px;
   }
 
   .how-it-works-icons {
     flex-direction: column;
-    align-items: center;
+    gap: 20px;
   }
 
   .icon {
-    max-width: 150px;
-  }
-
-  .accordion-title {
-    font-size: 1rem;
-  }
-
-  .accordion-arrow {
-    font-size: 1.3rem;
-  }
-
-  .accordion-content {
-    padding: 15px;
+    max-width: 180px;
   }
 }

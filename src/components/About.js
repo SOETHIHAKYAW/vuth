@@ -24,55 +24,108 @@ export default function About() {
   ];  
 
   return (
+    // <section id="about" className="about">
+    //   <h2>About Medical Massage</h2>
+    //   <p>
+    //     Medical massage (MM) is a therapeutic technique that targets specific muscles and areas of the body
+    //     to alleviate pain, enhance healing, and improve flexibility. Unlike traditional massage, it combines
+    //     deep tissue techniques with holistic methods that promote the body’s natural healing abilities.
+    //   </p>
+
+    //   <div className="card">
+    //     <h3>How Does Medical Massage Work?</h3>
+    //     <p>
+    //       Medical massage focuses on specific benefits that work together to enhance both the physical and emotional
+    //       well-being of the client. These include the release of muscle tension, improved blood circulation,
+    //       and the promotion of energy flow throughout the body.
+    //     </p>
+    //     <div className="how-it-works-icons">
+    //       <div className="icon">
+    //         <img src="assets/images/about/muscle.png" alt="Muscle Contraction" />
+    //         <p><strong>Muscle Contraction Release:</strong> MM targets areas where muscle tension has built up,
+    //         helping to release contractions and relieve chronic pain.</p>
+    //       </div>
+    //       <div className="icon">
+    //         <img src="assets/images/about/healthcare.png" alt="Blood Flow" />
+    //         <p><strong>Blood Flow Regeneration:</strong> Deep tissue techniques regenerate blood flow to areas
+    //         with poor circulation, promoting healing.</p>
+    //       </div>
+    //       <div className="icon">
+    //         <img src="assets/images/about/meditation.png" alt="Chi Energy" />
+    //         <p><strong>Chi Energy Flow:</strong> MM opens blocked pathways for Chi (vital energy), promoting balance
+    //         and energy within the body.</p>
+    //       </div>
+    //     </div>
+    //     <p>
+    //       These combined effects can have long-lasting benefits on your health, improving circulation,
+    //       restoring tissue elasticity, reducing blood pressure, and enhancing organ health.
+    //     </p>
+    //   </div>
+
+    //   <div className="card">
+    //     <h3>What Makes Medical Massage Different?</h3>
+    //     <p>
+    //       Unlike general Thai massage, MM requires a deep understanding of anatomy, energy flow, and specialized techniques.
+    //       It is an advanced practice that requires years of expertise to treat chronic pain, stiffness, and balance the body's energy.
+    //     </p>
+    //   </div>
+
+    //   <div className="card">
+    //     <h3>What Does a Professional Medical Massage Therapist Need?</h3>
+        
+    //     <div className="data-list">
+    //       {aboutData.map((data, index) => (
+    //         <div
+    //           key={index}
+    //           className={`data-item ${activeIndex === index ? 'active' : ''}`}
+    //           onClick={() => handleAccordionClick(index)}
+    //         >
+    //           <h3>{data.title}</h3>
+    //           {activeIndex === index && <p>{data.desc}</p>}
+    //         </div>
+    //       ))}
+    //     </div>
+    //   </div>
+    // </section>
     <section id="about" className="about">
       <h2>About Medical Massage</h2>
       <p>
-        Medical massage (MM) is a therapeutic technique that targets specific muscles and areas of the body
-        to alleviate pain, enhance healing, and improve flexibility. Unlike traditional massage, it combines
-        deep tissue techniques with holistic methods that promote the body’s natural healing abilities.
+        Medical massage (MM) targets specific muscles to alleviate pain, enhance healing, and improve flexibility.
+        It integrates deep tissue techniques with holistic healing methods.
       </p>
 
       <div className="card">
-        <h3>How Does Medical Massage Work?</h3>
+        <h3>Founder & Philosophy</h3>
         <p>
-          Medical massage focuses on specific benefits that work together to enhance both the physical and emotional
-          well-being of the client. These include the release of muscle tension, improved blood circulation,
-          and the promotion of energy flow throughout the body.
+          Medical-Massage was founded and is managed by K Vuth VVVVVV - a certified Massage therapist living in the island of Koh Phangan.
+          K Vuth developed a therapeutic way of massage based on:
         </p>
-        <div className="how-it-works-icons">
-          <div className="icon">
-            <img src="assets/images/about/muscle.png" alt="Muscle Contraction" />
-            <p><strong>Muscle Contraction Release:</strong> MM targets areas where muscle tension has built up,
-            helping to release contractions and relieve chronic pain.</p>
-          </div>
-          <div className="icon">
-            <img src="assets/images/about/healthcare.png" alt="Blood Flow" />
-            <p><strong>Blood Flow Regeneration:</strong> Deep tissue techniques regenerate blood flow to areas
-            with poor circulation, promoting healing.</p>
-          </div>
+        <ul>
+          <li>Precise diagnosis of pain and stiffness</li>
+          <li>Deep muscle therapy</li>
+          <li>Energy flow regeneration</li>
+        </ul>
+      </div>
+
+
+      <div className="how-it-works-icons">
+        <div className="icon">
+          <img src="assets/images/about/muscle.png" alt="Muscle Contraction" />
+          <p><strong>Muscle Contraction Release:</strong> Relieves chronic pain by easing tension.</p>
+        </div>
+        <div className="icon">
+          <img src="assets/images/about/healthcare.png" alt="Blood Flow" />
+          <p><strong>Blood Flow Regeneration:</strong> Enhances circulation for faster healing.</p>
+        </div>
           <div className="icon">
             <img src="assets/images/about/meditation.png" alt="Chi Energy" />
             <p><strong>Chi Energy Flow:</strong> MM opens blocked pathways for Chi (vital energy), promoting balance
             and energy within the body.</p>
           </div>
-        </div>
-        <p>
-          These combined effects can have long-lasting benefits on your health, improving circulation,
-          restoring tissue elasticity, reducing blood pressure, and enhancing organ health.
-        </p>
-      </div>
-
-      <div className="card">
-        <h3>What Makes Medical Massage Different?</h3>
-        <p>
-          Unlike general Thai massage, MM requires a deep understanding of anatomy, energy flow, and specialized techniques.
-          It is an advanced practice that requires years of expertise to treat chronic pain, stiffness, and balance the body's energy.
-        </p>
       </div>
 
       <div className="card">
         <h3>What Does a Professional Medical Massage Therapist Need?</h3>
-        
         <div className="data-list">
           {aboutData.map((data, index) => (
             <div
@@ -80,7 +133,7 @@ export default function About() {
               className={`data-item ${activeIndex === index ? 'active' : ''}`}
               onClick={() => handleAccordionClick(index)}
             >
-              <h3>{data.title}</h3>
+              <h4>{data.title}</h4>
               {activeIndex === index && <p>{data.desc}</p>}
             </div>
           ))}

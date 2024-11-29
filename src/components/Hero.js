@@ -14,8 +14,8 @@ export default function Hero() {
       <div className="hero-container">
         {/* Left Hero Text */}
         <div className="hero-side">
-          <div className="hero-text hero-top">Diagnostic</div>
-          <div className="hero-text hero-bottom">Release</div>
+          <div className="hero-text hero-top">Diagnosing</div>
+          <div className="hero-text hero-bottom">Releasing</div>
         </div>
 
         {/* Center Image */}
@@ -29,8 +29,8 @@ export default function Hero() {
 
         {/* Right Hero Text */}
         <div className="hero-side">
-          <div className="hero-text hero-top">Move</div>
-          <div className="hero-text hero-bottom">Flow</div>
+          <div className="hero-text hero-top">Regenerating Blood flow</div>
+          <div className="hero-text hero-bottom">Regenerate Flow of Chi Energy</div>
         </div>
       </div>
 
