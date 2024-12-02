@@ -12,12 +12,27 @@
   margin-bottom: 10px;
   letter-spacing: 1px;
   z-index: 1;
+  font-family: 'Playfair Display', serif; /* Classic serif font */
+  letter-spacing: 5px; /* Space between letters */
+  font-size: 48px; /* Large font size */
+  font-weight: 700; /* Bold text */
+  color: #333; /* Dark grey color */
+  /* text-transform: uppercase;  */
+  /* Make all letters uppercase */
 }
 
 .hero h2 {
-  font-size: 2rem;
+  /* font-size: 2rem;
   margin-bottom: 20px;
-  color: #bbb;
+  color: #bbb; */
+  font-family: 'Playfair Display', serif; /* Classic serif font */
+  letter-spacing: 5px; /* Space between letters */
+  font-size: 48px; /* Large font size */
+  font-weight: 700; /* Bold text */
+  color: #333; /* Dark grey color */
+  /* text-transform: uppercase;  */
+  /* Make all letters uppercase */
+  margin: 20px 0;
 }
 
 .hero-image-container {

@@ -48,7 +48,7 @@
   .navbar nav {
     justify-content: center; /* Center navigation links */
     flex-wrap: wrap; /* Allow wrapping to prevent overflow */
-    gap: 8px; /* Adjust gap for smaller screens */
+    gap: 6px; /* Adjust gap for smaller screens */
   }
 
   .navbar nav a {
