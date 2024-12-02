@@ -7,55 +7,64 @@
 .programs h2 {
   font-size: 2.5rem;
   color: #34495e;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-.program-list {
-  display: flex;
+.section-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin: 30px 0 20px;
+}
+
+.program-list,
+.package-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
   gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-items: center; /* Center items horizontally */
 }
 
-.program-item {
+.program-item,
+.package-item {
   background-color: #f9f9f9;
   border-radius: 8px;
   padding: 20px;
-  width: 300px;
+  width: 100%; /* Ensure the full width within the grid cell */
+  max-width: 400px; /* Limit the maximum width */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  display: flex;
-  flex-direction: column; /* Set the direction to column */
-  justify-content: space-between; /* Distribute space evenly between image, h3, and p */
-  align-items: center; /* Center items horizontally */
+}
+
+.program-item img,
+.package-item img {
+  width: 80px;
+  height: 80px;
   margin-bottom: 20px;
 }
 
-.program-item img {
-  width: 80px; /* Adjust the image size */
-  height: 80px;
-  margin-bottom: 20px; /* Add margin to separate the image from the heading */
-}
-
-.program-item:hover {
+.program-item:hover,
+.package-item:hover {
   transform: translateY(-10px);
 }
 
-.program-item h3 {
+.program-item h3,
+.package-item h3 {
   color: #18bc9c;
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
-.program-item p {
+.program-item p,
+.package-item p {
   color: #7f8c8d;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-/* Media query for smaller screens */
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .program-item {
-    width: 90%;
+  .program-list,
+  .package-list {
+    grid-template-columns: 1fr; /* One column on smaller screens */
   }
 }
