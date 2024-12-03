@@ -4,9 +4,9 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Programs from './components/Programs';
 import Contact from './components/Contact';
-import Media from './components/Media';
 import FAQ from './components/FAQ';
 import Testimonials from './components/Testimonials';
+import NWC from './components/NWC';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <Programs />
       <Testimonials />
       <FAQ />
-      <Media />
+      <NWC />
       <Contact />
     </div>
   );

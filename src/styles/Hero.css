@@ -17,7 +17,7 @@
   font-size: 48px; /* Large font size */
   font-weight: 700; /* Bold text */
   color: #333; /* Dark grey color */
-  /* text-transform: uppercase;  */
+  text-transform: uppercase; 
   /* Make all letters uppercase */
 }
 
@@ -30,7 +30,7 @@
   font-size: 48px; /* Large font size */
   font-weight: 700; /* Bold text */
   color: #333; /* Dark grey color */
-  /* text-transform: uppercase;  */
+  text-transform: uppercase; 
   /* Make all letters uppercase */
   margin: 20px 0;
 }
