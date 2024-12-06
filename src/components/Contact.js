@@ -3,15 +3,15 @@ import '../styles/Contact.css';
 
 export default function Contact() {
   const socialLinks = [
-    { platform: 'WhatsApp', url: 'https://facebook.com/yourpage', icon: 'assets/icons/whatsapp.png' },
+    { platform: 'WhatsApp', url: 'https://wa.me/6662006875', icon: 'assets/icons/whatsapp.png' },
     { platform: 'LINE', url: 'https://instagram.com/yourprofile', icon: 'assets/icons/line.png' },
     { platform: 'Facebook', url: 'https://twitter.com/yourhandle', icon: 'assets/icons/facebook.png' },
     { platform: 'Instagram', url: 'https://linkedin.com/in/yourprofile', icon: 'assets/icons/instagram.png' },
-    { 
-      platform: 'Google Maps Location', 
-      url: 'https://www.google.com/maps/place/Ko+Pha+Ngan', 
-      icon: 'assets/icons/location.png' 
-    },
+    // { 
+    //   platform: 'Google Maps Location', 
+    //   url: 'https://www.google.com/maps/place/Ko+Pha+Ngan', 
+    //   icon: 'assets/icons/location.png' 
+    // },
   ];
 
   return (
@@ -32,7 +32,17 @@ export default function Contact() {
         ))}
       </div>
       {/* Physical Address displayed below all icons */}
+      <div className='location'>
+      <a
+        href='https://www.google.com/maps/place/Ko+Pha+Ngan'
+        target="_blank"
+        rel="noopener noreferrer"
+        // aria-label={`Visit`}
+        >
+          <img src='assets/icons/location.png' alt={`Location Icon`} />
+      </a>
       <p className="address-text">123 Main Street, Ko Pha Ngan, Thailand</p>
+      </div>
     </section>
   );
 }

@@ -6,7 +6,7 @@ export default function Hero() {
     <section id="hero" className="hero">
       {/* Title Section */}
       <h1>Medical Massage</h1>
-      <h2>Koh Phangan</h2>
+      <h2>K&nbsp;&nbsp;O&nbsp;&nbsp;H&nbsp;&nbsp;&nbsp;&nbsp;P&nbsp;&nbsp;H&nbsp;&nbsp;A&nbsp;&nbsp;N&nbsp;&nbsp;G&nbsp;&nbsp;A&nbsp;&nbsp;N</h2>
       <div className="hero-image-container">
         <img
           src="../assets/hero/hero.png"

@@ -39,8 +39,8 @@
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  margin: 30px auto;
+  /* padding: 30px; */
+  /* margin: 30px auto; */
   max-width: 850px;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
@@ -54,7 +54,7 @@
 .card h3 {
   font-size: 2rem;
   color: #16a085;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -119,8 +119,8 @@
 
 /* Phase Section */
 .phase {
-  margin-bottom: 20px;
-  padding: 15px;
+  /* margin-bottom: 5px; */
+  /* padding: 15px; */
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #f9f9f9;
@@ -133,7 +133,7 @@
   font-size: 1.5rem;
   color: #2c3e50;
   cursor: pointer;
-  padding: 10px 15px;
+  padding: 0px 10px;
   background-color: #eaf0f6;
   border-radius: 5px;
 }
