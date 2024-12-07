@@ -1,5 +1,5 @@
 .nwc {
-    padding: 50px 20px;
+    padding: 20px 10px;
     background: linear-gradient(to bottom, #f5f5f5, #e6e6e6);
     color: #333;
     font-family: 'Arial', sans-serif;
@@ -22,7 +22,7 @@
   
   .nwc h3 {
     font-size: 2.2rem;
-    margin-top: 35px;
+    margin-top: 25px;
     margin-bottom: 15px;
     color: #34495e;
     text-align: center;
@@ -71,8 +71,8 @@
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    margin: 30px auto;
+    padding: 20px;
+    margin: 10px auto;
     max-width: 850px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   }

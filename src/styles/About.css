@@ -1,6 +1,6 @@
 /* General Styles */
 .about {
-  padding: 100px 30px;
+  padding: 20px 10px;
   text-align: center;
   background: linear-gradient(to right, #e0eafc, #cfdef3);
   background-size: cover;
@@ -86,9 +86,9 @@
 .how-it-works-icons {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
   flex-wrap: wrap;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .icon {
@@ -119,8 +119,7 @@
 
 /* Phase Section */
 .phase {
-  /* margin-bottom: 5px; */
-  /* padding: 15px; */
+  margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #f9f9f9;
