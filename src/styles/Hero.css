@@ -21,11 +21,11 @@
 
 .hero h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   color: #333;
   text-transform: uppercase;
-  letter-spacing: 18px;
+  letter-spacing: 24px;
   margin-top: 5px;
   line-height: 1;
   width: 100%;
@@ -83,7 +83,9 @@
   }
 
   .hero h2 {
-    font-size: 1.75rem;
+    font-size: 0.625rem;
+    /* letter-spacing: 24px; */
+    margin-left: 20px;
   }
 
   .cta button {
@@ -104,7 +106,10 @@
   }
 
   .hero h2 {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
+    /* letter-spacing: 24px; */
+    text-align: center;
+
   }
 
   .cta {
