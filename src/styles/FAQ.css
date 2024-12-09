@@ -1,129 +1,91 @@
 .faq {
-  padding: 20px 10px;
-  background-color: #f9f9f9;
+    padding: 20px 10px;
+    background: linear-gradient(135deg, #eef2f3 0%, #d7e1ec 100%); /* Subtle gradient for background */
 }
 
 .faq h2 {
-  font-size: 2.5rem;
-  color: #34495e;
-  margin-bottom: 20px;
-  text-align: center;
+    font-size: 2.5rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .faq-list {
-  max-width: 800px;
-  margin: 0 auto;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .faq-item {
-  padding: 15px;
-  margin-bottom: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .faq-item:hover {
-  background-color: #f1f1f1;
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .faq-item.active {
-  background-color: #f9f9f9;
-  border-color: #56ab2f;
+    background-color: #f9f9f9;
+    border-color: #56ab2f;
 }
 
 .faq-item h3 {
-  font-size: 1.5rem;
-  color: #34495e;
-  margin: 0;
+    font-size: 1.5rem;
+    color: #34495e;
+    margin: 0;
+    transition: color 0.3s;
+    margin-bottom: 15px;
+}
+
+.faq-item.active h3 {
+    color: #16a085; /* Provide a different color to active question */
 }
 
 .faq-item p {
-  font-size: 1.1rem;
-  color: #7f8c8d;
-  margin-top: 10px;
-  display: none;
-  transition: opacity 0.3s ease-in-out;
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-top: 10px;
+    display: none;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
 }
 
 .faq-item.active p {
-  display: block;
-  opacity: 1;
-}
-
-.card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  margin: 30px auto;
-  max-width: 850px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
-  background-color: #f7f7f7;
-}
-
-.card h3 {
-  font-size: 2rem;
-  color: #16a085;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.card p, .card ul {
-  font-size: 1.2rem;
-  color: #666;
-}
-
-.phase {
-  margin-bottom: 20px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-}
-
-.phase h4 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.5rem;
-  color: #2c3e50;
-  cursor: pointer;
-  padding: 10px 15px;
-  background-color: #eaf0f6;
-  border-radius: 5px;
-}
-
-.phase h4 span {
-  font-size: 1.8rem;
-  color: #16a085;
-  margin-left: auto;
-  transition: transform 0.3s ease;
-}
-
-.phase h4:hover span {
-  transform: scale(1.2);
+    display: block;
+    max-height: 200px; /* Set a reasonable max-height for smooth transition */
 }
 
 @media (max-width: 768px) {
-  .faq h2 {
-    font-size: 2rem;
-  }
-  .card {
-    max-width: 90%;
-  }
+    .faq h2 {
+        font-size: 2rem;
+    }
+
+    .faq-list {
+        padding: 0 20px;
+    }
 }
 
 @media (max-width: 480px) {
-  .card {
-    max-width: 100%;
-    padding: 15px;
-  }
+    .faq h2 {
+        font-size: 1.75rem;
+    }
+
+    .faq-item {
+        padding: 10px;
+    }
+
+    .faq-item h3 {
+        font-size: 1.25rem; /* Reduced size for smaller screens */
+    }
+
+    .faq-item p {
+        font-size: 0.9rem; /* Smaller text size for mobile */
+    }
 }

@@ -3,59 +3,68 @@ import '../styles/NWC.css';
 
 export default function NWC() {
   return (
-    <section id="nwc" className="nwc">
-      <div className='card'>
-        <h2>Natural Wellness Center</h2>
-        <p>
-            Welcome to the <strong>Natural Wellness Center (NWC)</strong>, a sanctuary dedicated to your complete well-being. In partnership with the <strong>Natural Healthcare Center (NHC)</strong> in Koh Phangan, we offer a range of holistic treatments designed to nourish and balance your <strong>Body, Soul, and Mind</strong>.
-        </p>
-        <p>
-            At the heart of our offerings is <strong>Medical Massage</strong>, a therapy that restores the flow of blood and energy throughout the body. This therapy enhances movement, flexibility, and overall vitality. After a session, you can continue strengthening your muscles through physical activities such as <strong>exercise, sports, and gym routines</strong>. Our treatments also support spinal health, allowing you to engage in longer <strong>Yoga</strong> and <strong>Meditation</strong> sessions with greater ease and comfort.
-        </p>
-        <p>
-            We also focus on <strong>Nutrition & Detoxing</strong>, which are essential for replenishing your body's energy and optimizing your health. These treatments are designed to cleanse, revitalize, and enhance your overall well-being. At the <strong>ALL-NATURAL Wellness Center</strong>, we provide expert guidance on a variety of effective and proven practices that nurture your body, mind, and soul.
-        </p>
-      </div>
-      <h3>Suggested Activities:</h3>
-      <table className="activity-table">
-        <tbody>
+      <section id="nwc" className="nwc">
+        <div className='card'>
+          <h2>Natural Wellness Center</h2>
+          <p>
+            Completing therapies by NHC – <strong>Natural Wellness Center</strong>
+          </p>
+          <p>
+            Medical Massage is working in <strong>Cooperation</strong> with NHC - Natural Healthcare
+            center Koh-Phangan suggesting a variety of completing treatments for
+            <strong>Body, Soul & Mind</strong>.
+          </p>
+          <p>
+            Medical massage <strong>releases</strong> the flow of blood and energy and regenerates
+            movements and flexibility. From there you can continue with a range
+            of physical activities to strengthen the muscles like exercises, sports, gym.
+            It strengthens your spine and allows you to do <strong>YOGA</strong> and
+            <strong>Meditation</strong> for longer hours. <strong>Nutrition & Detoxing</strong>
+            are important treatments for your body and complete the flow of good energy
+            and higher well being.
+          </p>
+          <p>
+            <strong>ALL-NATURAL</strong> Wellness Center which hosts MM suggests consultancies for
+            a variety of selected reliable and effective Body, Soul, and Mind activities.
+          </p>
+        </div>
+        <h3>Suggested Activities:</h3>
+        <table className="activity-table">
+          <tbody>
           <tr>
-            <td>DIAGNOSE</td>
+            <td rowSpan="2"><strong>DIAGNOSE</strong></td>
             <td>MEDICAL-MASSAGE</td>
             <td></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td></td>
             <td>MEDICAL-DEVICES</td>
             <td></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td>RELEASE</td>
+            <td rowSpan="3"><strong>RELEASE</strong></td>
             <td>Medical-Massage</td>
             <td></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td></td>
             <td>SAUNA</td>
             <td></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td></td>
             <td>ONSEN</td>
             <td></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td>MOVE</td>
+            <td rowSpan="5"><strong>MOVE</strong></td>
             <td></td>
             <td>EXERCISE</td>
             <td></td>
@@ -63,13 +72,11 @@ export default function NWC() {
           </tr>
           <tr>
             <td></td>
-            <td></td>
             <td>YOGA</td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td></td>
             <td></td>
             <td>PILATES</td>
             <td></td>
@@ -77,20 +84,18 @@ export default function NWC() {
           </tr>
           <tr>
             <td></td>
-            <td></td>
             <td>DANCING</td>
             <td></td>
             <td></td>
           </tr>
           <tr>
             <td></td>
-            <td></td>
             <td>IMPROVISATION</td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td>FLOW</td>
+            <td rowSpan="3"><strong>FLOW</strong></td>
             <td></td>
             <td></td>
             <td>YOGA</td>
@@ -99,12 +104,10 @@ export default function NWC() {
           <tr>
             <td></td>
             <td></td>
-            <td></td>
             <td>MEDITATION</td>
             <td></td>
           </tr>
           <tr>
-            <td></td>
             <td></td>
             <td></td>
             <td>NUTRITION-DIET</td>
@@ -118,7 +121,7 @@ export default function NWC() {
             <td></td>
           </tr>
           <tr>
-            <td>GROW</td>
+            <td rowSpan="2"><strong>GROW</strong></td>
             <td></td>
             <td></td>
             <td></td>
@@ -128,11 +131,10 @@ export default function NWC() {
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
             <td>PSYCHOLOGY</td>
           </tr>
-        </tbody>
-      </table>
-    </section>
+          </tbody>
+        </table>
+      </section>
   );
 }

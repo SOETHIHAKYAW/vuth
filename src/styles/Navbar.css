@@ -1,57 +1,81 @@
 .navbar {
-  background: #2c3e50; /* Dark background for the navbar */
-  padding: 10px 20px; /* Padding around the navbar */
+  background: #2c3e50;
+  padding: 10px 20px;
   display: flex;
-  justify-content: space-between; /* Space between logo and links */
-  align-items: center; /* Center items vertically */
-  position: sticky; /* Sticky navbar on scroll */
-  top: 0; /* Stick to the top */
-  z-index: 1000; /* Ensure it's above other content */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Logo Image */
 .navbar-logo {
-  height: 40px; /* Set height for the logo */
-  width: auto; /* Maintain aspect ratio */
+  height: 40px;
+  width: auto;
 }
 
 /* Navigation Links */
 .navbar nav {
-  display: flex; /* Display links in a row */
-  gap: 15px; /* Spacing between links */
+  display: flex;
+  gap: 15px;
 }
 
 .navbar nav a {
-  color: #fff; /* Link text color */
-  text-decoration: none; /* Remove underline */
-  font-weight: 500; /* Slightly bold */
-  font-size: 1rem; /* Adjust font size */
-  transition: color 0.3s ease; /* Smooth hover transition */
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar nav a::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 0;
+  height: 4px;
+  background-color: #18bc9c;
+  border-radius: 2px;
+  transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
 }
 
 .navbar nav a:hover {
-  color: #18bc9c; /* Highlight color on hover */
+  color: #18bc9c; /* Only change text color on hover */
+  transform: translateY(-2px) scale(1.05);
+}
+
+.navbar nav a:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+/* Remove Background Fade-in Effect */
+.navbar nav a::after {
+  display: none; /* Remove ::after pseudo-element */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .navbar {
-    flex-wrap: wrap; /* Allow wrapping if necessary */
+    flex-wrap: wrap;
   }
 
-  /* Hide the logo image on mobile */
   .navbar-logo {
     display: none;
   }
 
   .navbar nav {
-    justify-content: center; /* Center navigation links */
-    flex-wrap: wrap; /* Allow wrapping to prevent overflow */
-    gap: 12px; /* Adjust gap for smaller screens */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
   }
 
   .navbar nav a {
-    font-size: 0.9rem; /* Slightly smaller font for mobile */
+    font-size: 0.9rem;
   }
 }

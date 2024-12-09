@@ -1,71 +1,124 @@
 .programs {
-  padding: 20px 10px;
-  background-color: #ffffff;
-  text-align: center;
+    padding: 20px 10px;
+    background: linear-gradient(135deg, #eef2f3 0%, #d7e1ec 100%); /* Subtle gradient for background */
+    text-align: center;
 }
 
 .programs h2 {
-  font-size: 2.5rem;
-  color: #34495e;
-  margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #34495e;
+    font-weight: bold; /* Add boldness */
+    margin-bottom: 20px;
 }
 
 .section-title {
-  font-size: 2rem;
-  color: #2c3e50;
-  margin: 20px 0 10px;
+    font-size: 2rem;
+    color: #2c3e50;
+    font-weight: 600; /* Emphasized with a semi-bold font weight */
+    margin: 20px 0 10px;
 }
 
 .program-list,
 .package-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 20px;
-  justify-items: center; /* Center items horizontally */
-  margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 10px;
 }
 
 .program-item,
 .package-item {
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  padding: 20px;
-  width: 100%; /* Ensure the full width within the grid cell */
-  max-width: 400px; /* Limit the maximum width */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .program-item img,
 .package-item img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
 }
 
 .program-item:hover,
 .package-item:hover {
-  transform: translateY(-10px);
+    transform: translateY(-10px);
 }
 
 .program-item h3,
 .package-item h3 {
-  color: #18bc9c;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+    color: #18bc9c;
+    font-size: 1.5rem;
+    font-weight: bold; /* Ensures the header is attention-grabbing */
+    margin-bottom: 10px;
 }
 
 .program-item p,
 .package-item p {
-  color: #7f8c8d;
-  font-size: 1rem;
-  line-height: 1.5;
+    color: #7f8c8d;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.program-item p strong,
+.package-item p strong {
+    color: #34495e; /* Distinct color for strong text */
+    font-weight: 600; /* Slightly bolder than regular text */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .program-list,
-  .package-list {
-    grid-template-columns: 1fr; /* One column on smaller screens */
-  }
+    .program-list,
+    .package-list {
+        grid-template-columns: 1fr;
+    }
+
+    .programs h2 {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .program-item img,
+    .package-item img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .programs {
+        padding: 15px 5px;
+    }
+
+    .programs h2 {
+        font-size: 1.75rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .program-item h3,
+    .package-item h3 {
+        font-size: 1.25rem;
+    }
+
+    .program-item p,
+    .package-item p {
+        font-size: 0.9rem;
+    }
+
+    .program-item img,
+    .package-item img {
+        width: 60px;
+        height: 60px;
+    }
 }

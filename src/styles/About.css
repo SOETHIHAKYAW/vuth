@@ -2,7 +2,7 @@
 .about {
   padding: 20px 10px;
   text-align: center;
-  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  background: linear-gradient(135deg, #eef2f3 0%, #d7e1ec 100%); /* Subtle gradient for background */
   background-size: cover;
   overflow: hidden;
 }
@@ -28,10 +28,25 @@
   line-height: 1.8;
   letter-spacing: 0.5px;
   transition: opacity 0.5s ease-out;
+  text-align: left;
 }
 
 .about p:hover {
   opacity: 0.8;
+}
+
+.about p strong {
+  color: #16a085; /* Red color for emphasis */
+  font-weight: bold;
+  background-color: #fff0f0; /* Light background for emphasis */
+  padding: 0 3px; /* Small padding around text */
+  border-radius: 3px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about p strong:hover {
+  background-color: #16a085;
+  color: #ffffff;
 }
 
 /* Card Styles */
@@ -39,8 +54,6 @@
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  /* padding: 30px; */
-  /* margin: 30px auto; */
   max-width: 850px;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
@@ -54,7 +67,6 @@
 .card h3 {
   font-size: 2rem;
   color: #16a085;
-  /* margin-bottom: 20px; */
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -68,6 +80,7 @@
 .card ul {
   list-style: none;
   padding-left: 1.5rem;
+  text-align: left;
 }
 
 .card li {
@@ -80,41 +93,6 @@
   color: #16a085;
   position: absolute;
   left: -1.5rem;
-}
-
-/* Icon Section */
-.how-it-works-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 10px;
-}
-
-.icon {
-  text-align: center;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.icon:hover {
-  transform: translateY(-10px);
-  opacity: 0.8;
-}
-
-.icon img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 10px;
-  transition: transform 0.3s ease;
-}
-
-.icon img:hover {
-  transform: rotate(15deg);
-}
-
-.icon p {
-  font-size: 1rem;
-  color: #555;
 }
 
 /* Phase Section */
@@ -138,35 +116,15 @@
 }
 
 .phase h4 span {
-  font-size: 1.8rem; /* Adjust triangle size */
+  font-size: 1.8rem;
   color: #16a085;
   margin-left: auto;
   transition: transform 0.3s ease;
 }
 
 .phase h4:hover span {
-  transform: scale(1.2); 
-  /* Slight increase in size on hover */
+  transform: scale(1.2);
 }
-
-
-/* .phase h4 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.5rem;
-  color: #2c3e50;
-  cursor: pointer;
-  padding: 10px 15px;
-  background-color: #eaf0f6;
-  border-radius: 5px;
-}
-
-.phase h4 span {
-  font-size: 2rem;
-  color: #16a085;
-  margin-left: auto;
-} */
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -198,6 +156,7 @@
     padding: 15px;
   }
 
+  /* Handle smaller icons */
   .icon img {
     width: 60px;
     height: 60px;
